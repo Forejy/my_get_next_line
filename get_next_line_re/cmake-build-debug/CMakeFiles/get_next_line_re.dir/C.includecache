@@ -23,6 +23,10 @@ sys/fcntl.h
 -
 wait.h
 -
+errno.h
+-
+string.h
+-
 get_next_line.h
 /cygdrive/d/Documents/42/get_next_line_re/get_next_line.h
 
