@@ -1,1 +1,0 @@
-/usr/bin/cc -g  -Wl,--enable-auto-import CMakeFiles/get_next_line_re.dir/main2.c.o CMakeFiles/get_next_line_re.dir/get_next_line.c.o CMakeFiles/get_next_line_re.dir/main.c.o  -o get_next_line_re.exe -Wl,--out-implib,libget_next_line_re.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

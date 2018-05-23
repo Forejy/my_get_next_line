@@ -1,6 +1,0 @@
-Ok      Faire en sorte que la fonction renvoit, en un seul appel, une ligne entiere meme si la taille du buffer est inferieure au nombre de caractere sur la ligne
-Pas ok  Afficher le texte meme si la premiere ligne est un \n
-Ok      Afficher le texte s'il n'y a pas de \n (= c'est la derniere ligne)
-
-
-Test a faire : 3 lignes de meme taille, mettre taille + 1 en buff_size
