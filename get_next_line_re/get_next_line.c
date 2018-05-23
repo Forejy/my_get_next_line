@@ -32,13 +32,15 @@ char *ft_strjoin(char *s1, char *s2)
 	temp = str;
 	temp2 = s1;
 	if (s1)
+	{
 		while (*s1)
 			*str++ = *s1++;
-	if (s2)
+		free(temp2);
+	}
+		if (s2)
 		while (*s2)
 			*str++ = *s2++;
 	*str = '\0';
-	free (temp2);
 	return (temp);
 }
 
@@ -107,13 +109,11 @@ t_string		*ft_file_read(int const fd, char **str)
 		while (**str != '\n' && **str)
 		{
 			s->str[i[1]++] = **str;
-			free(&*str);
 			(*str)++;
 		}
 		s->str[i[1]] = '\0';
 		if (**str == '\n')
 		{
-			free(&*str);
 			(*str)++;
 		}
 	}
@@ -172,7 +172,7 @@ int			get_next_line(int const fd, char **line)
 	*line = s_and_info->str;
 	if (s_and_info->lecture == 0)
 	{
-		free((void *)list_str->str);
+//		free((void *)list_str->str);
 		free((void *)s_and_info);
 		return (0);
 	}
