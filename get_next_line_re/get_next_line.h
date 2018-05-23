@@ -3,7 +3,7 @@
 
 # include <unistd.h>
 # include <stdlib.h>
-# define BUFF_SIZE 100000
+# define BUFF_SIZE 1024
 
 typedef struct		s_string
 {
